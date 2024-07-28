@@ -8,11 +8,16 @@ config.background = {
             File = "/home/snuff/wallpapers/island.jpg"
         },
         hsb = {
-            brightness = 0.2,
+            brightness = 0.05,
             hue = 1.0,
             saturation = 1.2,
         },
     }
+}
+
+config.window_padding = {
+    top = 0,
+    bottom = 0,
 }
 
 config.color_scheme = 'rose-pine'
