@@ -3,7 +3,8 @@ local lsp = require("lsp-zero")
 lsp.preset("recommended")
 vim.filetype.add({ extension = { templ = "templ" } })
 
-require('mason').setup({})
+require('mason').setup({
+})
 require('mason-lspconfig').setup({
     ensure_installed = {
         'eslint', 'rust_analyzer', 'lua_ls', 'phpactor', 'pyright'
@@ -62,6 +63,7 @@ cmp.setup({
         end,
     },
     sources = {
+        { name = 'buffer' },
         { name = 'nvim_lsp' },
         { name = 'path' },
         { name = 'crates' },
